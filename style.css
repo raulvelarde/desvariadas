@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.logo { 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    width: 100%; 
+    height: 150px; 
+
+}
+
+.search{
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    margin-top: 0%;
+    margin-right: 10px;
+
+}
+
+input{
+    height: 20px;
+    width: 200px;
+}
+
+header{
+    background-image: url(./img/background/fucsia.jpg);
+
+} 
+
+.checkbox{
+    width: 30px;
+    height: 30px;
+    
+}
+
+nav input{ visibility: hidden;}
+
+label img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+label{
+    margin-bottom: 50px;
+    margin-left: 10px;
+
+}
+
+header nav label{
+    display: block;
+    cursor: pointer;
+    justify-self: right;
+}
+
+.items-menu{
+    position: absolute;
+    padding-left: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 60%;
+    width: -10%;
+    top: auto;
+    text-align: center;
+}
+
+label{
+    height: 0;
+    background-color: black;
+    margin-top: -8%;
+}
+
+label img{
+    height: 100px;
+    
+}
+
+nav>ul {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(10, 10, 196, 0);
+}
+
+/*--COLUMNA--MENU__RESPONSIVE----*/
+
+header nav label{
+    display: block;
+    cursor: pointer;
+    justify-self: right;
+}
+
+.items-menu{
+    position: absolute;
+    padding-left: 10px;
+    display: block;
+    margin: -600%;
+    width: -10%;
+    top: auto;
+    text-align: center;
+}
+
+nav>ul {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(10, 10, 196, 0);
+}
+
+/*--CONTENDOR--MENU__RESPONSIVE----*/
+
+nav>ul>li {
+    height: 30%;
+    width: 130px;
+    list-style: none;
+    position: relative;
+    background-color:  rgba(0, 0, 0, 0.555);
+    z-index: 10px;
+}
+
+
+
+/*--FUENTE--MENU__RESPONSIVE----*/
+
+
+nav>ul>li>a {
+    text-decoration: none;
+    font-weight: 800;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+    color: rgba(99, 255, 242, 0.992);
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+
+nav>ul>li>a:hover{
+    background-image: url(./img/background/fucsia.jpg);
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 5);
+    color: rgb(0, 0, 0);
+    text-shadow: 0, 0, 0;
+    transform: scale(1.1);
+    padding-left: 20px;
+    font-size: 14px;
+    box-shadow: 0, 0, 0;
+}
+
+
+
+
+/*--SELECTOR--MENU__RESPONSIVE----*/
+
+nav ul li a:hover {
+    width: 170px;
+    transform: scale(1.1);
+    background-image:url(./img/background/fucsia.jpg);
+    box-shadow: 0px 10px 10px 0px rgb(0, 0, 0, 5);
+
+}
+
+
+
+/*--SUB-MENU__RESPONSIVE----*/
+
+
+nav ul li ul {
+    
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    padding: 10px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: rgba(0, 0, 0, 0.664);
+    z-index: 0;
+    transition: all 300ms ease;
+    list-style: none;
+}
+
+
+/*--CONTENEDOR--SUB-MENU__RESPONSIVE----*/
+
+nav ul li:hover ul {
+    margin-left: 160px;
+    width: 150px;
+    visibility: visible;
+    opacity: 1;
+    top: 0px;
+    list-style: none;
+    background-color: rgba(53, 52, 52, 0.404);
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 5);
+background-color: rgba(53, 52, 52, 0.404);
+} 
+
+/*--FUENTE--SUB-MENU__RESPONSIVE----*/
+
+nav ul li ul li a {
+    text-decoration: none;
+    font-weight: 800;
+    display: block; 
+    color: rgba(99, 255, 242, 0.992);
+    padding: 6px;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+
+/*--SELECTOR--SUB-MENU__RESPONSIVE----*/
+
+nav ul li ul li a:hover {
+    background-image: url(./img/background/fucsia.jpg);
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 5);
+    color: rgb(0, 0, 0);
+    text-shadow: 0, 0, 0;
+    transform: scale(1.1);
+    padding-left: 20px;
+    font-size: 14px;
+    box-shadow: 0, 0, 0;
+}
+
+#btn-menu:checked ~ .items-menu{ margin: 0; width: px;}
+
+body {
+    background-image:url(./img/background/lanarosa.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+footer{background-image: url(./img/background/jeanoscuro.jpg);
+    margin-top: 100%;
+    height: 150px;
+}
